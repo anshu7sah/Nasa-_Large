@@ -9,10 +9,10 @@ on:
       runs-on: ubuntu-latest
       steps:
         -uses:actions/checkout@v3
-        -name:Use Node.js version 16
+        -name:Use Node.js version 18
           uses:action/setup-node@v3
           with:
-            node-version:'16'
+            node-version:'18.3.0'
         -run:npm install
         -run:npm run build --prefix client
         
